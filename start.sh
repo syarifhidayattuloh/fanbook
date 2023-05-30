@@ -4,7 +4,7 @@ export PYTHONUNBUFFERED=true
 
 VIRTUALENV=.data/venv
 
-if[! -d $VIRTUALENV]; then
+if [ ! -d $VIRTUALENV ]; then
   python3 -m venv $VIRTUALENV
 fi
 
@@ -15,5 +15,4 @@ fi
 $VIRTUALENV/bin/pip install -r requirements.txt
 
 $VIRTUALENV/bin/python3 app.py
-
 Footer
